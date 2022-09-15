@@ -1,0 +1,209 @@
+/*/////////////////////////////////////////////////////////////////////////////*/
+/*LINKS*/
+/*/////////////////////////////////////////////////////////////////////////////*/
+/*link behaviors*/
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}
+
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+/*NAVIGATION BAR WORDS*/
+/*/////////////////////////////////////////////////////////////////////////////*/
+/*parenttitle: centers any text in the heading*/
+
+
+/*logotitle: customizes the logo*/
+/* centers any text in the heading */
+#logo{
+    font-family: 'Share', cursive;
+    font-size: 300%;
+
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%,0);
+    padding: 10px;
+}
+
+/*parentnav: centers any links to future pages in the heading */
+.parent_nav{
+    display: inline-block;
+    font-family: 'Share', cursive;
+}
+
+
+/*persNav: centers the navigation for all info ie: about, contacts and tim & tam's activities*/
+#mainNav{
+    top: 25%;
+    position: absolute;
+    left: 55%;
+    transform: translate(-50%,0);
+    word-spacing: 20px;
+}
+
+/*"Learn More": position*/
+#learnMoreLabel {
+    top: 20%;
+    position: absolute;
+    left: 43%;
+    transform: translate(-50%,0);
+}
+
+/*"Personal": position*/
+#personalLabel {
+    top: 20%;
+    position: absolute;
+    left: 60%;
+    transform: translate(-50%,0);
+    word-spacing: 25px;
+}
+
+.pageTitle {
+    top: 27%;
+    position: absolute;
+    left: 50%;
+    font-size: 100%;
+    transform: translate(-50%,0);
+}
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+/*NAVIGATION LINES*/
+/*/////////////////////////////////////////////////////////////////////////////*/
+/*Left line ontop of links*/
+header:before {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    left: 54%;
+    top: 23%;
+}
+/*Right lines ontop of links*/
+header:after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    left: 33%;
+    top: 23%;
+}
+
+/*Middle line bellow pagetitle*/
+h1:before {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    left: -30%;
+    top: 80%;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+/*ABOUT SECTION*/
+/*/////////////////////////////////////////////////////////////////////////////*/
+/*Paragraph location for tim's about description*/
+#aboutTim {
+    top: 50%;
+    position: absolute;
+    left: 60%;
+    word-spacing: 0px;
+    text-align: right;
+    border-bottom: 4xp, solid red;
+}
+
+/*Tim's profil picture */
+
+
+/*Paragraph location for tam's about description*/
+#aboutTam {
+    top: 90%;
+    position: absolute;
+    left: 18%;
+    word-spacing: 0px;
+    text-align: left;
+    border-bottom: 4xp, solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    background-color:aliceblue;
+    color:blueviolet;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 80%;
+}
+/*
+header, section {
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+img {
+    height: 200px;
+    margin: 5px;
+    border-radius: 50%;
+}
+pictures, figcaption {
+    text-align: center;
+}
+h1, h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+figure {
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+*/
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+/*CONTACT SECTION*/
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+#TimsInfo{
+    top: 40%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    word-spacing: 0px;
+    text-align: center;
+    border-bottom: 10xp, solid black;
+
+}
+
+#TamsInfo{
+    top: 60%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    word-spacing: 0px;
+    text-align: center;
+    border-bottom: 10xp, solid black;
+    
+}
+
+.email{
+
+    display: inline-block;
+    font-family: 'Share', cursive;
+    position: absolute;
+
+}
