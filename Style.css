@@ -1,209 +1,105 @@
-/*/////////////////////////////////////////////////////////////////////////////*/
-/*LINKS*/
-/*/////////////////////////////////////////////////////////////////////////////*/
-/*link behaviors*/
+/*Question*/
+
+/*TESTING*/
+
+/*//////////////////////////////////////////////////////////////*/
+
+
+
+
+/*////////////////////////////////////////////////*/
+/*LINK BEHAVIORS*/
+/*////////////////////////////////////////////////*/
+
 a:link {text-decoration: none;}
 a:visited {text-decoration: none;}
 a:hover {text-decoration: none;}
 a:active {text-decoration: none;}
 
 
-/*/////////////////////////////////////////////////////////////////////////////*/
-/*NAVIGATION BAR WORDS*/
-/*/////////////////////////////////////////////////////////////////////////////*/
-/*parenttitle: centers any text in the heading*/
+/*////////////////////////////////////////////////*/
+/*GENERAL CLASSES*/
+/*////////////////////////////////////////////////*/
 
-
-/*logotitle: customizes the logo*/
-/* centers any text in the heading */
-#logo{
-    font-family: 'Share', cursive;
-    font-size: 300%;
-
+/*POSITIONS IN THE CENTER COLUMN*/
+.centerColumn {
     position: absolute;
     left: 50%;
-    top: 5%;
-    transform: translate(-50%,0);
-    padding: 10px;
+    transform: translate(-50%, -50%); /*Moves top left corner of box to center*/
 }
 
-/*parentnav: centers any links to future pages in the heading */
-.parent_nav{
-    display: inline-block;
-    font-family: 'Share', cursive;
-}
-
-
-/*persNav: centers the navigation for all info ie: about, contacts and tim & tam's activities*/
-#mainNav{
-    top: 25%;
-    position: absolute;
-    left: 55%;
-    transform: translate(-50%,0);
-    word-spacing: 20px;
-}
-
-/*"Learn More": position*/
-#learnMoreLabel {
-    top: 20%;
-    position: absolute;
-    left: 43%;
-    transform: translate(-50%,0);
-}
-
-/*"Personal": position*/
-#personalLabel {
-    top: 20%;
+/*POSITIONS IN THE RIGHT COLUMN*/
+.rightColumn {
     position: absolute;
     left: 60%;
-    transform: translate(-50%,0);
-    word-spacing: 25px;
+    width: 20%;
 }
 
-.pageTitle {
-    top: 27%;
+/*POSITIONS IN THE LEFT COLUMN*/
+.leftColumn {
     position: absolute;
-    left: 50%;
-    font-size: 100%;
-    transform: translate(-50%,0);
+    left: 10%;
+    width: 20%;
 }
 
-/*/////////////////////////////////////////////////////////////////////////////*/
-/*NAVIGATION LINES*/
-/*/////////////////////////////////////////////////////////////////////////////*/
-/*Left line ontop of links*/
-header:before {
-    content: "";
-    display: block;
-    width: 180px;
-    height: 2px;
-    background: #000;
-    position: absolute;
-    left: 54%;
-    top: 23%;
-}
-/*Right lines ontop of links*/
-header:after {
-    content: "";
-    display: block;
-    width: 300px;
-    height: 2px;
-    background: #000;
-    position: absolute;
-    left: 33%;
-    top: 23%;
+
+/*////////////////////////////////////////////////*/
+/*LOGO + NAVIGATION*/
+/*////////////////////////////////////////////////*/
+
+/*LOGO CODE*/
+#logo {
+    padding: 0%;
+    width: auto;
+    height: auto;
+    background-color: aqua;
+    top: 10%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/*Middle line bellow pagetitle*/
-h1:before {
-    content: "";
-    display: block;
-    width: 200px;
-    height: 2px;
-    background: #000;
-    position: absolute;
-    left: -30%;
-    top: 80%;
+
+/*CONTAINER FOR NAVIGATION BAR*/
+.navBar {
+    padding: 1%; /*Adding space around element*/
+    margin: 0%;
+    width: 30%;
+    height: auto;
+    display: flex;/*Child elements align like columns or rows*/
+    justify-content: space-evenly; /*Even spacing w/ words and border*/
+    top: 20%;
+    border-top: 1px solid black;
+    background-color: antiquewhite;
 }
 
-/*/////////////////////////////////////////////////////////////////////////////*/
-/*ABOUT SECTION*/
-/*/////////////////////////////////////////////////////////////////////////////*/
-/*Paragraph location for tim's about description*/
-#aboutTim {
+
+/*////////////////////////////////////////////////*/
+/*ABOUT SECTION CODES*/
+/*////////////////////////////////////////////////*/
+
+.aboutTim {
+    padding: 3%;
+    margin: 0%;
+    background-color: antiquewhite;
+    border: 1px solid black;
     top: 50%;
-    position: absolute;
-    left: 60%;
-    word-spacing: 0px;
-    text-align: right;
-    border-bottom: 4xp, solid red;
 }
 
-/*Tim's profil picture */
-
-
-/*Paragraph location for tam's about description*/
-#aboutTam {
-    top: 90%;
-    position: absolute;
-    left: 18%;
-    word-spacing: 0px;
-    text-align: left;
-    border-bottom: 4xp, solid black;
+.aboutTam {
+    padding: 3%;
+    margin: 0%;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    top: 50%;
 }
 
 
 
 
 
+/*////////////////////////////////////////////////*/
+/*BODY*/
+/*////////////////////////////////////////////////*/
 
-
-
-
-
-
-
-body{
-    background-color:aliceblue;
-    color:blueviolet;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 80%;
-}
-/*
-header, section {
-    background-color: aliceblue;
-    border-radius: 5px;
-}
-img {
-    height: 200px;
-    margin: 5px;
-    border-radius: 50%;
-}
-pictures, figcaption {
-    text-align: center;
-}
-h1, h2 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-figure {
-    display: flex;
-    margin: 5px;
-    flex-direction: column;
-    align-items: center;
-}
-*/
-
-/*/////////////////////////////////////////////////////////////////////////////*/
-/*CONTACT SECTION*/
-/*/////////////////////////////////////////////////////////////////////////////*/
-
-#TimsInfo{
-    top: 40%;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    word-spacing: 0px;
-    text-align: center;
-    border-bottom: 10xp, solid black;
-
-}
-
-#TamsInfo{
-    top: 60%;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    word-spacing: 0px;
-    text-align: center;
-    border-bottom: 10xp, solid black;
-    
-}
-
-.email{
-
-    display: inline-block;
-    font-family: 'Share', cursive;
-    position: absolute;
-
+body {
+    background-color: azure;
 }
