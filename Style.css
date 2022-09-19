@@ -2,42 +2,8 @@
 
 /*TESTING*/
 
-#page-container {
-    position: relative;
-    min-height: 100vh;
-    background-color: aquamarine;
-}
-
-/* footer height */
-#content-wrap {
-    padding-bottom: 1%;
-    background-color: blue;
-}
 
 
-#footer {
-    padding: 0%;
-    margin: 0%;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 1%; /* Footer height */
-    background-color: aqua;
-    text-align: center;
-    
-}
-
-
-#timAboutPic {
-    top: 30%;
-    width: 20%;
-}
-
-#tamAboutPic {
-    /* top: 40%; */
-    top: 75%;
-    width: 20%;
-}
 
 /*//////////////////////////////////////////////////////////////*/
 
@@ -119,31 +85,43 @@ a:active {text-decoration: none;}
 /*ABOUT SECTION CODES*/
 /*////////////////////////////////////////////////*/
 
-
+/* ABOUT-ME DESCRIPTION FOR TIM */
 .aboutTim {
     padding: 3%;
     margin: 0%;
-    height: __;
-    width: 40%; 
+    height: auto;
+    width: 50%; 
     background-color: gainsboro ;
     /* border: 1px solid black; */
     top:50%;
-    left: 55%;
-    /*top: 80%; */
+    left: 60%;
 }
 
+/* ABOUT-ME DESCRIPTION FOR TAM */
 .aboutTam {
     padding: 3%;
     margin: 0%;
-    height: __;
-    width: 40%; /* WIDTH ATTACHED TO LEFT/RIGHT COLUMN */
+    height: auto;
+    width: 51%; /* WIDTH ATTACHED TO LEFT/RIGHT COLUMN */
     background-color: gainsboro;
     /* border: 1px solid black; */
     top:75%;
     /*top: 80%; */
 }
 
+/* IRL PICTURE OF TIM */
+#timAboutPic {
+    top: 30%;
+    width: 20%;
+}
 
+/* IRL PICTURE OF TAM */
+#tamAboutPic {
+    /* top: 40%; */
+    top: 75%;
+    width: 20%;
+    left: 72%;
+}
 
 
 
@@ -154,4 +132,31 @@ a:active {text-decoration: none;}
 
 body {
     background-color: white;
+}
+
+/*////////////////////////////////////////////////*/
+/*FOOTER*/
+/*////////////////////////////////////////////////*/
+
+/* box for entire features */
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+/* footer height */
+#content-wrap {
+    padding-bottom: 1%;
+}
+
+/* footer */
+#footer {
+    padding: 0%;
+    margin: 0%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1%; /* Footer height */
+    text-align: center;
+    
 }
