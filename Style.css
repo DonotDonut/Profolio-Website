@@ -1,6 +1,33 @@
 /*Question*/
 
 /*TESTING*/
+main {
+    height: 100%;
+}
+
+footer {
+    padding: 3%;
+    margin: 0%;
+    height: 5%;
+    text-align: center;
+    background-color: red;
+    position: absolute;
+    width: 50%;
+    bottom: 10px;
+    border: 3px solid #8AC007;
+}
+
+
+#timAboutPic {
+    top: 30%;
+    width: 20%;
+}
+
+#tamAboutPic {
+    /* top: 40%; */
+    top: 75%;
+    width: 20%;
+}
 
 /*//////////////////////////////////////////////////////////////*/
 
@@ -71,6 +98,7 @@ a:active {text-decoration: none;}
     justify-content: space-evenly; /*Even spacing w/ words and border*/
     top: 25%;
     border-top: 1px solid black;
+    font-size: 100%;
     /*
     background-color: antiquewhite;
     */
@@ -81,25 +109,30 @@ a:active {text-decoration: none;}
 /*ABOUT SECTION CODES*/
 /*////////////////////////////////////////////////*/
 
+
 .aboutTim {
     padding: 3%;
     margin: 0%;
     height: __;
-    width: ___;
-    background-color: antiquewhite;
-    border: 1px solid black;
-    top: 50%;
+    width: 40%; 
+    background-color: gainsboro ;
+    /* border: 1px solid black; */
+    top:50%;
+    left: 55%;
+    /*top: 80%; */
 }
 
 .aboutTam {
     padding: 3%;
     margin: 0%;
     height: __;
-    width: ___;
-    background-color: antiquewhite;
-    border: 1px solid black;
-    top: 50%;
+    width: 40%; /* WIDTH ATTACHED TO LEFT/RIGHT COLUMN */
+    background-color: gainsboro;
+    /* border: 1px solid black; */
+    top:75%;
+    /*top: 80%; */
 }
+
 
 
 
@@ -110,5 +143,5 @@ a:active {text-decoration: none;}
 /*////////////////////////////////////////////////*/
 
 body {
-    background-color: azure;
+    background-color: white;
 }
