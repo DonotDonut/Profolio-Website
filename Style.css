@@ -5,6 +5,7 @@
 
 
 
+
 /*//////////////////////////////////////////////////////////////*/
 
 
@@ -57,12 +58,12 @@ a:active {text-decoration: none;}
     width: 30%;
     height: auto;
     top: 15%;
+    size: 100%;
     /*
     background-color: aqua;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     */
 }
-
 
 /*CONTAINER FOR NAVIGATION BAR*/
 .navBar {
@@ -90,11 +91,11 @@ a:active {text-decoration: none;}
     padding: 3%;
     margin: 0%;
     height: auto;
-    width: 50%; 
+    width: 51%; 
     background-color: gainsboro ;
     /* border: 1px solid black; */
     top:50%;
-    left: 60%;
+    left: 63%;
 }
 
 /* ABOUT-ME DESCRIPTION FOR TAM */
@@ -133,6 +134,91 @@ a:active {text-decoration: none;}
 body {
     background-color: white;
 }
+
+
+
+/*////////////////////////////////////////////////*/
+/*TAM ACTIVITIES*/
+/*////////////////////////////////////////////////*/
+
+/*CONTROLS OVERALL SIZE OF PICTURES; CONTAINS tamImage, tamOverlay, AND tamText*/
+.tamContainer {
+    position: relative;
+    width: 100%;
+    /*
+    background-color: green;
+    */
+}
+
+/*CONTROLS SIZE OF PICTURES IN TAM'S TABLE*/
+.tamImage {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*CONTROLS TAM'S TABLE PICTURES IN TABLE TEXT*/
+.tamOverlay {
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    height: 100%;
+    width: 100%;
+    opacity: 0%;
+    transition: 0.5s ease;
+    background-color: gainsboro;
+}
+
+/*IF MOUSE HOVERS OVER tamImages THEN CHANGE OPACITY*/
+.tamContainer:hover .tamOverlay {
+    opacity: 0.9;
+}
+
+/*PRODUCES TEXT IN CENTER OF tamImages*/
+.tamText {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    padding: 2%;
+    /*
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: beige;
+    */
+}
+
+/*CONTROLS TAM'S TABLE, ROWS, AND COLUMNS*/
+table, th, td {
+    /*
+    border: 1px solid black;
+    */
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*CONTROLS TAM'S TABLE*/
+table {
+    border-spacing: 1%;
+}
+
+/*CONTAINER FOR TAM'S TABLE; ABLE TO MOVE TAM'S TABLE*/
+#descTam {
+    top: 40%;
+    /*
+    background-color: gainsboro;
+    border: 1px solid black;
+    */
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
 
 /*////////////////////////////////////////////////*/
 /*FOOTER*/
