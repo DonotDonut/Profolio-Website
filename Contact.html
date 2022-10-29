@@ -2,77 +2,132 @@
 <html lang=""en> <!-- language is english -->
 
 <html>
-    <head>  
-            <!-- logo at the very top-->
-            <div id = "logo"> TimTam </div>
-
-        <link href="Style.css" type="text/css" rel="stylesheet"/>
+    <head>
+        <link href="style.css" rel="stylesheet" />
     </head>
-
     <body>
-        <header>
+        <!-- box the entire page (everything included) -->
+        <div id="page-container">
 
-            <!-- titel of the page-->
-            <div class = "pageTitle">
-                <h1> CONTACT </h1>
-            </div>
+            <!-- box of all the main features inorder to create the bottom padding
+                that is the height of the footer, ensuring that exactly enough space
+                is left for the footer inside the container they are both in -->
+            <div id="content-wrap">
 
-        <!-- labels for the navigation-->
-            <div class = "parent_nav" id = "learnMoreLabel" > 
-                <a> LEARN MORE </a>
-            </div>
+                <header>
+                    <!-- logo at the very top-->
+                    <img class ="centerColumn" id= "logo" src="TimTamLogo.png" alt ="Two characters on either side of a logo titled 'TimTam'"> 
+                   
+                    <!-- navigation bar -->
+                    <div class="navBar centerColumn">
 
-            <div class = "parent_nav" id = "personalLabel" >
-                <a> PERSONAL </a>
-            </div>
+                        <div style="width: auto;"> <!-- background-color: thistle; -->
+                            <a  href="timothy_activities.html"> Timothy </a>
+                        </div>
 
+                        <div style="width: 10%;">
+                            <a href="mathea_activities.html"> Mathea </a>
+                        </div>
 
-        <!-- navigation: links to other class/webpages -->
-            <div class = "parent_nav" id = "mainNav">
+                        <div style="width: auto;">
+                            <a href="About.html"> About </a>
+                        </div>
 
-                    <a href="About.html"> About </a>
+                        <div style="width: auto;">
+                            <a href="contact.html"> Contact </a>
+                        </div>
+                    </div>
+                </header>
+               
+                <main> 
 
-                    <a href="Contact.html"> Contact </a>
-
-                    <a href="TamActivities.html"> Mathea </a>
-
-                    <a  href="TimActivities.html"> Timothy </a>
-            </div> 
-        </header>
-
-        <main>
-
-            <!-- information about Tim -->
-            <div class = "pageTitle" id ="TimsInfo">
-
-                
-
-                <p>
-                    If you want to get in touch with me, email me at <br>  
-                    <span class = "email"> tjcaole.contact@gmail.com </span>
+                    <!-- *REFERENCE FOR USING A IMAGE AS A LINK*
+                        https://www.w3schools.com/tags/att_a_target.asp#:~:text=The%20target%20attribute%20specifies%20where%20to%20open%20the%20linked%20document.
+                        https://www.youtube.com/watch?v=D6aHo1VvCc8
+                    -->
                     
+                    <table> 
+                            <tr> <!-- 1st row -->
+
+                                <!-- tim's img cartoon + img socail-->
+                                    <th>  <!-- 1st col -->
+
+                                            <!-- Tim's Contacts-->
+                                        <div class="centerColumn contactInfo" id="timsContactInfo"> 
+                                            <p> 
+                                                To get in touch with Timothy Caole, email at <br> 
+                                                TjCaole4@gmai.com <br> 
+                                                <br> 
+                                                
+                                                <!-- picture is used as link 
+                                                a new page will be created when picture is clicked, due to target-->
+                                                <a href="https://www.linkedin.com/in/timothy-john-caole/" target="_blank"> 
+                                                    <img class="socialLogo" src="LinkedInLogo.png" alt="LinkedIn logo Link">
+                                                </a> 
+
+                                                <a href="https://github.com/DonotDonut" target="_blank"> 
+                                                    <img class="socialLogo" src="GitHubLogo.png" alt="Github logo Link">
+                                                </a> 
+                                            </p> 
+
+                                        </div>
+
+                                    </th> 
+
+                                <!-- Speech box -->    
+                                    <th> <!-- 2nd col -->
+                                        
+
+
+                                    </th> 
+
+                                <!-- tam's img cartoon + img socail -->    
+                                    <th> <!-- 3rd col -->
+                                            
+                                        <!-- Tam's Contacts-->
+                                        <div class="centerColumn contactInfo" id="tamsContactInfo"> 
+                                            <p> 
+                                                To get in touch with Mathea Caole, message at
+                                                    <br> 
+                                                    <br>
+                                                <a href="https://www.linkedin.com/in/matheacaole/" target="_blank">  
+                                                    <img class="socialLogo" src="LinkedInLogo.png" alt="LinkedIn logo Link"> 
+                                                </a> 
+
+                                            </p> 
+                                        </div>
+                                    </th> 
+
+                            </tr>
+                    </table>
+                    
+
+                    
+
+
+                </main>
+
+            <!-- end of content-wrap -->
+            </div>
+
+            <!-- footer -->
+            <footer id="footer">
+                <p> 
                     <br>
-                    <a href="https://linkedin.com/in/timothy-john-caole"> LinkedIn </a>
-                    <br>  
-                    <a href="https://github.com/"> GitHub </a>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    All images &copy; 2020-2022 Timothy and Mathea Caole 
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                 </p>
-
-            </div>
-
-            <!-- information about Tam -->
-            <div class = "pageTitle" id = "TamsInfo">
-                <p>
-                    This is where TAM's about description is going to be. Hello, I'm Mathea.
-                    I'm a student at University of Washington studying bioengineering.
-                </p>
-            </div>
-        </main>
-
-
-        <!-- TYPE INFO HERE-->
-        <footer>
-            <p> All images &copy: 2020-2022 Mathea Caole </p>
-        </footer>
-
+            </footer>
+        <!-- end of page-container -->
+        </div>
+        
     </body>
 </html>
