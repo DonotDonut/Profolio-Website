@@ -15,10 +15,10 @@
 /*LINK BEHAVIORS*/
 /*////////////////////////////////////////////////*/
 
-a:link {text-decoration: none;}
-a:visited {text-decoration: none;}
-a:hover {text-decoration: none;}
-a:active {text-decoration: none;}
+a:link {text-decoration: none; color:black}
+a:visited {text-decoration: none; color:black}
+a:hover {text-decoration: none; color:black}
+a:active {text-decoration: none; color:black}
 
 
 /*////////////////////////////////////////////////*/
@@ -124,7 +124,39 @@ a:active {text-decoration: none;}
     left: 72%;
 }
 
+/*////////////////////////////////////////////////*/
+/*CONTACT*/
+/*////////////////////////////////////////////////*/
 
+/* FORMAT FOR CONTAINER FOR TIM'S AND TAM'S CONTACT INFORMATION, IN CONTACT PAGE*/ 
+.contactInfo {
+    position: absolute;
+    width: 25%;
+    height: 20%;
+
+    padding: 5px;
+
+    border-radius: 10%;
+    border-color: black;
+    border-style: solid;
+
+    text-align: center;
+}
+
+/* SPECIFIC FORMAT ADJUSTMENTS FOR THE CONTACTS PLACEMENTS */
+#timsContactInfo{
+    top: 42%;
+}
+
+#tamsContactInfo{
+    top: 70%;
+}
+
+/* GENERAL FORMAT FOR SOCIAL LOGOS E.G LINKINED & GITHUB*/ 
+.socialLogo{
+    width: 10%; 
+    height: auto;
+}
 
 
 /*////////////////////////////////////////////////*/
@@ -135,7 +167,14 @@ body {
     background-color: white;
 }
 
+/*////////////////////////////////////////////////*/
+/*TIM ACTIVITIES*/
+/*////////////////////////////////////////////////*/
 
+/*Center of screen*/
+#timCenter {
+    top: 50%;
+}
 
 /*////////////////////////////////////////////////*/
 /*TAM ACTIVITIES*/
@@ -192,19 +231,17 @@ body {
     */
 }
 
-/*CONTROLS TAM'S TABLE, ROWS, AND COLUMNS*/
-table, th, td {
-    /*
-    border: 1px solid black;
-    */
+/*CONTROLS TAM'S TABLE*/
+.tableTam {
+    width: 100%;
+    border-spacing: 1%;
+}
+
+/*CONTROLS TAM'S th, td*/
+.tableContentTam {
     padding: 1%;
     margin-left: auto;
     margin-right: auto;
-}
-
-/*CONTROLS TAM'S TABLE*/
-table {
-    border-spacing: 1%;
 }
 
 /*CONTAINER FOR TAM'S TABLE; ABLE TO MOVE TAM'S TABLE*/
@@ -218,39 +255,6 @@ table {
     height: auto;
     position: absolute;
 }
-
-
-/* FORMAT FOR CONTAINER FOR TIM'S AND TAM'S CONTACT INFORMATION, IN CONTACT PAGE*/ 
-.contactInfo {
-    position: absolute;
-    width: 25%;
-    height: 20%;
-
-    padding: 5px;
-
-    border-radius: 10%;
-    border-color: black;
-    border-style: solid;
-
-    text-align: center;
-}
-
-/* SPECIFIC FORMAT ADJUSTMENTS FOR THE CONTACTS PLACEMENTS */
-#timsContactInfo{
-    top: 42%;
-}
-
-#tamsContactInfo{
-    top: 70%;
-}
-
-/* GENERAL FORMAT FOR SOCIAL LOGOS E.G LINKINED & GITHUB*/ 
-.socialLogo{
-    width: 10%; 
-    height: auto;
-}
-
-
 
 
 /*////////////////////////////////////////////////*/
