@@ -220,6 +220,39 @@ table {
 }
 
 
+/* FORMAT FOR CONTAINER FOR TIM'S AND TAM'S CONTACT INFORMATION, IN CONTACT PAGE*/ 
+.contactInfo {
+    position: absolute;
+    width: 25%;
+    height: 20%;
+
+    padding: 5px;
+
+    border-radius: 10%;
+    border-color: black;
+    border-style: solid;
+
+    text-align: center;
+}
+
+/* SPECIFIC FORMAT ADJUSTMENTS FOR THE CONTACTS PLACEMENTS */
+#timsContactInfo{
+    top: 42%;
+}
+
+#tamsContactInfo{
+    top: 70%;
+}
+
+/* GENERAL FORMAT FOR SOCIAL LOGOS E.G LINKINED & GITHUB*/ 
+.socialLogo{
+    width: 10%; 
+    height: auto;
+}
+
+
+
+
 /*////////////////////////////////////////////////*/
 /*FOOTER*/
 /*////////////////////////////////////////////////*/
